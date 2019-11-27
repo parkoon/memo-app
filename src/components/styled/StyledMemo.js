@@ -47,6 +47,11 @@ export const StyledMemoList = styled.div`
   border: 1px solid blue;
   height: 72px;
 
+  input {
+    width: 19px;
+    height: 19px;
+  }
+
   .memo-list__info {
     p {
       display: inline-block;
