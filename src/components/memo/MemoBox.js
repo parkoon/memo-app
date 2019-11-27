@@ -9,9 +9,26 @@ const MemoBox = () => {
       <header>
         <h4>라벨3</h4>
         <div className="memo-box__actions">
-          <Button mr={7} />
-          <Button mr={7} />
-          <Button />
+          <Button
+            mr={7}
+            onClick={() => {
+              alert("1");
+            }}
+            title={"버튼"}
+          />
+          <Button
+            mr={7}
+            onClick={() => {
+              alert("1");
+            }}
+            title={"버튼"}
+          />
+          <Button
+            onClick={() => {
+              alert("1");
+            }}
+            title={"버튼"}
+          />
         </div>
       </header>
 

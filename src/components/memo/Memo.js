@@ -7,7 +7,12 @@ const Memo = () => {
       <header>
         <h3 className="memo__title">제목</h3>
         <div className="memo__actions">
-          <Button />
+          <Button
+            onClick={() => {
+              alert("1");
+            }}
+            title={"버튼"}
+          />
           <span>제목 수정됨: 2019. 02. 12</span>
         </div>
       </header>
