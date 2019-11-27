@@ -9,8 +9,8 @@ const MemoBox = () => {
       <header>
         <h4>라벨3</h4>
         <div className="memo-box__actions">
-          <Button />
-          <Button />
+          <Button mr={7} />
+          <Button mr={7} />
           <Button />
         </div>
       </header>

@@ -28,6 +28,11 @@ export const StyledMemo = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
+    .memo__actions {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
 
   main {
