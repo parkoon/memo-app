@@ -1,7 +1,7 @@
 import React from "react";
-
+import { StyledLabel } from "../styled/StyledLabel";
 const Label = () => {
-  return <div>Label</div>;
+  return <StyledLabel>Label</StyledLabel>;
 };
 
 export default Label;
