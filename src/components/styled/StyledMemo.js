@@ -5,6 +5,16 @@ export const StyledMemoBox = styled.div`
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
   overflow: auto;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+
+    .memo-box__actions {
+      display: flex;
+    }
+  }
 `;
 
 export const StyledMemo = styled.div`
