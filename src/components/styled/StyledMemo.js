@@ -46,10 +46,21 @@ export const StyledMemoList = styled.div`
   grid-gap: 4px;
   border: 1px solid blue;
   height: 72px;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &.selected {
+    background: lightblue;
+  }
+
+  &:hover {
+    background: lightblue;
+  }
 
   input {
     width: 19px;
     height: 19px;
+    cursor: pointer;
   }
 
   .memo-list__info {

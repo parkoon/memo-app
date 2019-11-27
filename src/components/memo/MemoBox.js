@@ -32,7 +32,7 @@ const MemoBox = () => {
         </div>
       </header>
 
-      <MemoList></MemoList>
+      <MemoList className="selected"></MemoList>
       <MemoList></MemoList>
       <MemoList></MemoList>
       <MemoList></MemoList>

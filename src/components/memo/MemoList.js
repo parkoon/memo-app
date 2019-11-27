@@ -1,9 +1,9 @@
 import React from "react";
 import { StyledMemoList } from "../styled/StyledMemo";
 
-const MemoList = () => {
+const MemoList = props => {
   return (
-    <StyledMemoList>
+    <StyledMemoList {...props}>
       <input
         // name="isGoing"
         type="checkbox"
