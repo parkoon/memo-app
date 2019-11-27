@@ -11,6 +11,17 @@ export const StyledMemo = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
+  padding: 12px 24px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+  }
+
+  main {
+  }
 `;
 
 export const StyledMemoList = styled.div`
