@@ -1,7 +1,9 @@
 import React from "react";
 
+import { StyledLabelBox } from "../styled/StyledLabel";
+
 const LabelBox = () => {
-  return <div>LabelBox</div>;
+  return <StyledLabelBox>LabelBox</StyledLabelBox>;
 };
 
 export default LabelBox;

@@ -10,10 +10,17 @@ import {
   useRouteMatch
 } from "react-router-dom";
 
+// Components
+import { LabelBox } from "./components/label";
+import { MemoBox, Memo } from "./components/memo";
+
 function App() {
   return (
     <div className="App">
-      <Router>
+      <LabelBox />
+      <MemoBox />
+      <Memo />
+      {/* <Router>
         <div>
           <ul>
             <li>
@@ -29,13 +36,7 @@ function App() {
 
           <hr />
 
-          {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
+    
           <Switch>
             <Route exact path="/">
               <Home />
@@ -46,12 +47,10 @@ function App() {
             <Route path="/memo">
               <Dashboard />
             </Route>
-            {/* <Route path="/memo/:label">
-              <Dashboard />
-            </Route> */}
+          
           </Switch>
         </div>
-      </Router>
+      </Router> */}
     </div>
   );
 }
