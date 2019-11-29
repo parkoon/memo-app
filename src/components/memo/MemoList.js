@@ -1,20 +1,33 @@
-import React from "react";
+import React, { useCallback, useState, useEffect } from "react";
+import moment from "moment";
+
 import { StyledMemoList } from "../styled/StyledMemo";
+import { useRouteMatch } from "react-router-dom";
 
 const MemoList = props => {
+  const [check, setCheck] = useState(false);
+  let { path, url } = useRouteMatch();
+
+  const handleChange = useCallback(({ target }) => {
+    setCheck(target.checked);
+    props.handleCheckItem(props.id, target.checked);
+  });
+
   return (
     <StyledMemoList {...props}>
       <input
-        // name="isGoing"
         type="checkbox"
-        // checked={this.state.isGoing}
-        // onChange={this.handleInputChange}
+        onClick={e => {
+          e.stopPropagation();
+        }}
+        checked={check}
+        onChange={handleChange}
       />
       <div className="memo-list__info">
-        <h4 className="info__title">제목</h4>
-        <p className="info__desc">babababababdssdfsdfdsfa</p>
+        <h4 className="info__title">{props.title}</h4>
+        <p className="info__desc">{props.content}</p>
       </div>
-      <div>2019.09.02</div>
+      <div>{moment(props.updatedAt).format("MMM Do")}</div>
     </StyledMemoList>
   );
 };

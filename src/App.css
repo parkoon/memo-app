@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-columns: 160px 400px 700px;
   grid-column-gap: 12px;
   position: absolute;
   top: 50%;
@@ -9,5 +9,4 @@
   width: 95%;
   max-width: 1280px;
   height: 80vh;
-  background: rgba(0, 0, 0, 0.1);
 }

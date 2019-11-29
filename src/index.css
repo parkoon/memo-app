@@ -16,3 +16,13 @@ p {
 * {
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.selected {
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}

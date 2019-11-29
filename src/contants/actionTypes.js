@@ -9,6 +9,14 @@
 
 export const FETCH_LABELS = "FETCH_LABELS";
 export const ADD_LABEL = "ADD_LABEL";
+export const DELETE_LABEL = "DELETE_LABEL";
+export const ADD_MEMO_TO_LABEL = "ADD_MEMO_TO_LABEL";
+export const DELTE_MEMO_FROM_LABEL = "DELTE_MEMO_FROM_LABEL";
+export const UPDATE_MEMO_FROM_LABEL = "UPDATE_MEMO_FROM_LABEL";
+
+export const FETCH_MEMO = "FETCH_MEMO";
+export const ADD_MEMO = "ADD_MEMO";
+export const UPDATE_MEMO = "UPDATE_MEMO";
 
 // 필요한 API
 /**
